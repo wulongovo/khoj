@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres-pgvector:16
+    container_name: khoj-postgres
+    environment:
+      POSTGRES_USER: khoj
+      POSTGRES_PASSWORD: khoj_pass_2026
+      POSTGRES_DB: khoj
+    ports:
+      - "5432:5432"
+    volumes:
+      - khoj_pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  khoj_pgdata:
