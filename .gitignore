@@ -1,0 +1,12 @@
+# Logs
+*.log
+# Database
+*.db
+data/
+# Python
+__pycache__/
+*.pyc
+*.pyo
+# IDE
+.vscode/
+.idea/
